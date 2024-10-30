@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hope Foundation - Making a difference in communities through education, healthcare, and environmental initiatives">
+    <title>Hope Foundation - Making a Difference</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/api/placeholder/50/50" alt="Hope Foundation Logo" class="logo-img">
+                <span>Hope Foundation</span>
+            </div>
+            <button class="mobile-menu-button" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#causes">Our Causes</a>
+                <a href="#events">Events</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#impact">Impact</a>
+                <a href="#contact">Contact</a>
+                <a href="#donate" class="cta-button">Donate</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Together We Can Make a Difference</h1>
+            <p>Join us in our mission to create positive change and build a better future for all.</p>
+            <a href="#donate" class="cta-button">Make a Donation</a>
+            <a href="#causes" class="secondary-button">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation-section" id="donate">
+        <div class="donation-container">
+            <h2 class="section-title">Make a Donation</h2>
+            <div class="progress-container">
+                <h3>Campaign Progress</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" data-width="75%"></div>
+                </div>
+                <div class="progress-stats">
+                    <span>Raised: $75,000</span>
+                    <span>Goal: $100,000</span>
+                </div>
+            </div>
+            <form id="donationForm" class="contact-form">
+                <div class="donation-options">
+                    <div class="donation-amount" data-amount="25">$25</div>
+                    <div class="donation-amount" data-amount="50">$50</div>
+                    <div class="donation-amount" data-amount="100">$100</div>
+                    <div class="donation-amount" data-amount="200">$200</div>
+                </div>
+                <div class="form-group">
+                    <input type="number" id="customAmount" class="custom-amount" placeholder="Custom Amount ($)">
+                </div>
+                <div class="form-group">
+                    <label for="donorName">Full Name</label>
+                    <input type="text" id="donorName" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="donorEmail">Email</label>
+                    <input type="email" id="donorEmail" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="donorPhone">Phone</label>
+                    <input type="tel" id="donorPhone">
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="cta-button">
+                    <span class="button-text">Donate Now</span>
+                    <span class="loading-spinner"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Causes Section -->
+    <section class="causes" id="causes">
+        <h2 class="section-title">Our Causes</h2>
+        <div class="causes-grid">
+            <div class="cause-card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.NjLaRJb4Ejl5gKiTDEDkpwHaFN&pid=Api&P=0&h=220" alt="Education Initiative" class="cause-image">
+                <div class="cause-content">
+                    <h3>Education</h3>
+                    <p>Providing quality education to underprivileged children and creating opportunities for a brighter future.</p>
+                    <a href="#donate" class="learn-more">Support Education →</a>
+                </div>
+            </div>
+            <div class="cause-card">
+                <img src="https://img.freepik.com/premium-photo/multidisciplinary-care-is-integrated-team-approach-healthcare-shot-group-medical-practitioners-standing-together-hospital_590464-2749.jpg?w=2000" alt="Healthcare Services" class="cause-image">
+                <div class="cause-content">
+                    <h3>Healthcare</h3>
+                    <p>Ensuring access to essential medical services and promoting community health initiatives.</p>
+                    <a href="#donate" class="learn-more">Support Healthcare →</a>
+                </div>
+            </div>
+            <div class="cause-card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.pnvdimIPFj88w83t0I9Y2wHaE8&pid=Api&P=0&h=220" alt="Environmental Protection" class="cause-image">
+                <div class="cause-content">
+                    <h3>Environment</h3>
+                    <p>Protecting our planet through conservation efforts and sustainable practices education.</p>
+                    <a href="#donate" class="learn-more">Support Environment →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section" id="events">
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-image-container">
+                    <img src="https://tse3.mm.bing.net/th?id=OIP.y6BxBuLIt45PzwmwqvOkagHaE8&pid=Api&P=0&h=220" alt="Charity Run Event" class="event-image">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Dec</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Annual Charity Run</h3>
+                    <p class="event-location"><i class="location-icon"></i>Central Park, New York</p>
+                    <p class="event-time"><i class="time-icon"></i>8:00 AM - 12:00 PM</p>
+                    <p>Join us for our annual charity run to raise funds for education.</p>
+                    <button class="cta-button" onclick="showEventModal('Annual Charity Run')">Register Now</button>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image-container">
+                    <img src="https://patch.com/img/cdn20/users/26793663/20240130/092515/gala-ad-public___30092512619.jpg" alt="Fundraising Gala Event" class="event-image">
+                    <div class="event-date">
+                        <span class="day">20</span>
+                        <span class="month">Dec</span>
+                    </div>
+                </div>
+                <div class="event-details">
+                    <h3>Fundraising Gala</h3>
+                    <p class="event-location"><i class="location-icon"></i>Grand Hotel, New York</p>
+                    <p class="event-time"><i class="time-icon"></i>7:00 PM - 11:00 PM</p>
+                    <p>An evening of entertainment and fundraising for our healthcare initiatives.</p>
+                    <button class="cta-button" onclick="showEventModal('Fundraising Gala')">Register Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2 class="section-title">Our Impact Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.8uN-pZaItF14rIQdyrXehwHaE8&pid=Api&P=0&h=220" alt="Community Service Project">
+                <div class="gallery-overlay">
+                    <h3>Community Service</h3>
+                    <p>Volunteers helping local communities</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://www.hindustantimes.com/ht-img/img/2023/05/15/1600x900/Chief-secretary-Durga-Shankar-Mishra-inaugurated-a_1684156619385.jpeg" alt="Education Program">
+                <div class="gallery-overlay">
+                    <h3>Education Program</h3>
+                    <p>Providing quality education</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.0oNOEPh_BpDOJ3eMuL5HJAAAAA&pid=Api&P=0&h=220" alt="Healthcare Initiative">
+                <div class="gallery-overlay">
+                    <h3>Healthcare Initiative</h3>
+                    <p>Medical camps and services</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://im.whatshot.in/img/2020/Jun/istock-1130655067-cropped-1591265020.jpg" alt="Environmental Project">
+                <div class="gallery-overlay">
+                    <h3>Environmental Project</h3>
+                    <p>Conservation efforts</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section class="impact" id="impact">
+        <h2 class="section-title">Our Impact</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="10000">10,000+</div>
+                <div class="stat-label">Lives Impacted</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="50">50+</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="100">100+</div>
+                <div class="stat-label">Volunteers</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="25">25+</div>
+                <div class="stat-label">Communities Served</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="info-item">
+                    <i class="location-icon"></i>
+                    <p>123 Hope Street, New York, NY 10001</p>
+                </div>
+                <div class="info-item">
+                    <i class="phone-icon"></i>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="email-icon"></i>
+                    <p>info@hopefoundation.org</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="cta-button">
+                    <span class="button-text">Send Message</span>
+                    <span class="loading-spinner"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter for updates on our projects and events.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email" required>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="cta-button">
+                    <span class="button-text">Subscribe</span>
+                    <span class="loading-spinner"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">Hope Foundation</div>
+                <p>Making the world a better place, one step at a time.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a class="clink" href="#home">Home</a></li>
+                    <li><a class="clink" href="#causes">Our Causes</a></li>
+                    <li><a class="clink" href="#events">Events</a></li>
+                    <li><a class="clink" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="facebook-icon"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="twitter-icon"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="instagram-icon"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="linkedin-icon"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hope Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="eventModal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Close modal">&times;</span>
+            <h2>Event Registration</h2>
+            <form id="eventRegistrationForm">
+                <div class="form-group">
+                    <label for="eventName">Event</label>
+                    <input type="text" id="eventName" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="registrantName">Your Name</label>
+                    <input type="text" id="registrantName" required>
+                    <span class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registrantEmail">Email</label>
+                    <input type="email" id="registrantEmail" required>
+                    <span class="error-message"></span>
+                </div>
+                <button type="submit" class="cta-button">
+                    <span class="button-text">Register</span>
+                    <span class="loading-spinner"></span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">↑</button>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
